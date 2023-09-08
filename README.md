@@ -1,5 +1,5 @@
-#Repository untuk menyimpan latihan Praktikum Pemrograman Web 2
-###(mulai dari pertemuan ke-4, latihan untuk pertemuan ke-3 ada di repository lain)
+# Repository untuk menyimpan latihan Praktikum Pemrograman Web 2
+### (mulai dari pertemuan ke-4, latihan untuk pertemuan ke-3 ada di repository lain)
 #### brach main : pertemuan ke-4 (Controller and Migration)
 
 
