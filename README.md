@@ -1,6 +1,6 @@
 # Repository untuk menyimpan latihan Praktikum Pemrograman Web 2
 ### (mulai dari pertemuan ke-4, latihan untuk pertemuan ke-3 ada di repository lain)
-#### branch week-4 : pertemuan ke-4 (Controller and Migration)
+- [branch week-4](https://github.com/imrismaa/kinda-latihan/blob/week-4/README.md) : pertemuan ke-4 (Controller and Migration)
 
 
 
