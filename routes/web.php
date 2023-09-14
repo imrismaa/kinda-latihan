@@ -32,3 +32,7 @@ Route::get('/dor', [PostController::class, 'tryController']
 // with variables
 Route::get('/seconddor', [PostController::class, 'showAbout']
 );
+
+// model
+Route::get('/perumahan', [PostController::class, 'tryModel']
+);

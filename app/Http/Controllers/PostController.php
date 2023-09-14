@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Perumahan;
 
 class PostController extends Controller
 {
@@ -94,4 +95,10 @@ class PostController extends Controller
     
         return view('about', ['name' => $name, 'email' => $email]);
     }   
+
+    // model
+    public function tryModel() {
+        $perumahan = Perumahan::all();
+        return view('perumahan.index', compact('perumahan'));
+    }
 }
