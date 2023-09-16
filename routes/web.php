@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\BukuController;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,4 +36,8 @@ Route::get('/seconddor', [PostController::class, 'showAbout']
 
 // model
 Route::get('/perumahan', [PostController::class, 'tryModel']
+);
+
+// model buku
+Route::get('/buku', [BukuController::class, 'tryModel']
 );
