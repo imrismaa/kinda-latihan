@@ -1,6 +1,8 @@
 # Repository untuk menyimpan latihan Praktikum Pemrograman Web 2
 ### (mulai dari pertemuan ke-4, latihan untuk pertemuan ke-3 ada di repository lain)
 - branch [week-4](https://github.com/imrismaa/kinda-latihan/tree/week-4) : pertemuan ke-4 (Controller and Migration)
+- branch [week-5](https://github.com/imrismaa/kinda-latihan/tree/week-5) : pertemuan ke-5 (Seeder, Model, and Factory)
+  
 
 
 
