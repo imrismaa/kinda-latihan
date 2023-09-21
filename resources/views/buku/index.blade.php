@@ -34,7 +34,7 @@
                 <th>Penulis</th>
                 <th>Harga</th>
                 <th>Tanggal Terbit</th>
-                <th>Aksi</th>
+                <th colspan="2">Aksi</th>
             </tr>
         </thead>
         <tbody>
@@ -51,17 +51,20 @@
                         <button onclick="return confirm('yakin mau dihapus?')">Hapus</button>
                     </form>
                 </td>
+                <td>
+                    <button><a href="{{ route('buku.edit', $buku->id) }}">Edit</a></button> 
+                </td>
             </tr>
             @endforeach
         </tbody>
         <tfoot>
             <tr>
                 <td colspan="3">TOTAL HARGA</td>
-                <td colspan="3">{{ "Rp ".number_format($total_harga, 2, ',', '.') }}</td>
+                <td colspan="4">{{ "Rp ".number_format($total_harga, 2, ',', '.') }}</td>
             </tr>
             <tr>
                 <td colspan="3">JUMLAH BUKU</td>
-                <td colspan="3">{{ $jumlah_data }}</td>
+                <td colspan="4">{{ $jumlah_data }}</td>
             </tr>
         </tfoot>
     </table>

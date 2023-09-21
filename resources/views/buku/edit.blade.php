@@ -7,17 +7,22 @@
 </head>
 <body>
     <div class="container">
-        <form action="{{route('mahasiswa.update',$mahasiswa->id)}}" method="POST">
+        <form action="{{route('buku.update',$buku->id)}}" method="POST">
         @csrf
         <div>Judul
-            <input type="text" name="nama" id="nama" value="{{$mahasiswa->nama}}">
+            <input type="text" name="judul" id="judul" value="{{$buku->judul}}">
         </div>
-        <div>Jurusan
-            <input type="text" name="jurusan" id="jurusan" value="{{$mahasiswa->jurusan}}">
-            
+        <div>Penulis
+            <input type="text" name="penulis" id="penulis" value="{{$buku->penulis}}">
+        </div>
+        <div>Harga
+            <input type="text" name="harga" id="harga" value="{{$buku->harga}}">
+        </div>
+        <div>Tanggal Terbit
+            <input type="date" name="tgl_terbit" id="tgl_terbit" value="{{$buku->tgl_terbit}}">
         </div>
         <div><button type="submit">Simpan</button></div>
-        <a href="/mahasiswa"> Batal</a>
+        <a href="/buku"> Batal</a>
     </form>
     </div>
 </body>
