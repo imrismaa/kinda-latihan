@@ -34,6 +34,7 @@
                 <th>Penulis</th>
                 <th>Harga</th>
                 <th>Tanggal Terbit</th>
+                <th>Aksi</th>
             </tr>
         </thead>
         <tbody>
@@ -44,19 +45,26 @@
                 <td>{{ $buku->penulis }}</td>
                 <td>{{ "Rp ".number_format($buku->harga, 2, ',', '.') }}</td>
                 <td>{{ \Carbon\Carbon::parse($buku->tgl_terbit)->format('d/m/Y') }}</td>
+                <td>
+                    <form action="{{ route('buku.destroy', $buku->id) }}" method="post">
+                        @csrf
+                        <button onclick="return confirm('yakin mau dihapus?')">Hapus</button>
+                    </form>
+                </td>
             </tr>
             @endforeach
         </tbody>
         <tfoot>
             <tr>
                 <td colspan="3">TOTAL HARGA</td>
-                <td colspan="2">{{ "Rp ".number_format($total_harga, 2, ',', '.') }}</td>
+                <td colspan="3">{{ "Rp ".number_format($total_harga, 2, ',', '.') }}</td>
             </tr>
             <tr>
                 <td colspan="3">JUMLAH BUKU</td>
-                <td colspan="2">{{ $jumlah_data }}</td>
+                <td colspan="3">{{ $jumlah_data }}</td>
             </tr>
         </tfoot>
     </table>
+    <p align="right"><a href="{{ route('buku.create') }}">Tambah Buku</a></p>
 </body>
 </html>
