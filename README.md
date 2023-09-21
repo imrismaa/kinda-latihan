@@ -2,10 +2,7 @@
 ### (mulai dari pertemuan ke-4, latihan untuk pertemuan ke-3 ada di repository lain)
 - branch [week-4](https://github.com/imrismaa/kinda-latihan/tree/week-4) : pertemuan ke-4 (Controller and Migration)
 - branch [week-5](https://github.com/imrismaa/kinda-latihan/tree/week-5) : pertemuan ke-5 (Seeder, Model, and Factory)
-  
-
-
-
+- branch [week-6](https://github.com/imrismaa/kinda-latihan/tree/week-6) : pertemuan ke-6 (CRUD)
 
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
