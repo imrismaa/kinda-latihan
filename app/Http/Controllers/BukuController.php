@@ -29,6 +29,11 @@ class BukuController extends Controller
         return redirect('/buku');
     }
 
+    public function edit($id) {
+        $buku = BukuModel::find($id);
+        return view('buku.edit', compact('buku'));
+    }
+
     public function update(Request $request, $id) {
         $buku = BukuModel::find($id);
         $buku->update([
@@ -44,11 +49,6 @@ class BukuController extends Controller
         $buku = BukuModel::find($id);
         $buku->delete();
         return redirect('/buku');
-    }
-
-    public function edit($id) {
-        $buku = BukuModel::find($id);
-        return view('buku.edit', compact('buku'));
     }
 
 }

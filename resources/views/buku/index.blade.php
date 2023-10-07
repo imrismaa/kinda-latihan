@@ -23,9 +23,28 @@
         tfoot tr {
             background-color: #e0e0e0;
         }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
     </style>
 </head>
 <body>
+    <h4 align="center">Daftar Buku</h4>
+    <button align="right">
+        <a href="{{ route('buku.create') }}">Tambah Buku</a>
+    </button>
     <table>
         <thead>
             <tr>
@@ -68,6 +87,5 @@
             </tr>
         </tfoot>
     </table>
-    <p align="right"><a href="{{ route('buku.create') }}">Tambah Buku</a></p>
 </body>
 </html>
