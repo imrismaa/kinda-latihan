@@ -60,6 +60,9 @@
         <input type="text" name="kata" class="form-control" placeholder="Cari ..." style="width: 30%;
             display: inline; margin-top: 10px; margin-bottom: 10px; float: right;">
     </form>
+
+    @if(count($data_buku))
+        <div class"alert alert-success">Ditemukan <strong>{{ count($data_buku) }}</strong> data dengan kata: <strong>{{ $cari }}</strong></div>
     <table>
         <thead>
             <tr>
@@ -102,6 +105,10 @@
             </tr>
         </tfoot>
     </table>
+    @else
+        <div class="alert alert-warning"><h4>Data {{ $cari }} tidak ditemukan</h4></div>
+        <a href="/buku" class="btn btn-warning">Kembali</a>
+    @endif
     <div>
         {{ $data_buku->links() }}
     </div>
